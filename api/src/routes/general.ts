@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import controllerSubject from 'src/useCases/SubjectCRUD'
 import controlerUserCRUD from 'src/useCases/UserCRUD'
 
 const router = Router()
@@ -9,10 +10,10 @@ router.delete('/user', async (req, res) => controlerUserCRUD.handleDeleteUser(re
 router.put('/user', async (req, res) => controlerUserCRUD.handleUpdateUser(req, res))
 
 router.route('/question')
-  .post(async (req, res) => res.send())
-  .get(async (req, res) => res.send())
-  .delete(async (req, res) => res.send())
-  .put(async (req, res) => res.send())
+  .post(async (req, res) => controllerSubject.handleSaveSubject(req, res))
+  .get(async (req, res) => controllerSubject.handleFindSubject(req, res))
+  .delete(async (req, res) => controllerSubject.handleDeleteSubject(req, res))
+  .put(async (req, res) => controllerSubject.handleUpdateSubject(req, res))
 
 router.route('/subject')
   .post(async (req, res) => res.send())

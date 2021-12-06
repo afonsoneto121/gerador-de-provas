@@ -17,3 +17,4 @@ app.use(general)
 database.run().then(() => {
   app.listen(port, () => console.log(`API running in port ${port}`))
 })
+export default app

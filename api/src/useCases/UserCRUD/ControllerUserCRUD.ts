@@ -49,7 +49,6 @@ export default class ControllerUserCRUD {
 
   async handleFindUser (req: Request, res: Response): Promise<Response> {
     const id = req.query.id as string
-    console.log(id)
     try {
       const result = id === undefined
         ? await this.useCase.findAll()
