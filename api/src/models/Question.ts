@@ -3,7 +3,8 @@ import { Subject } from './Subject'
 import { v4 as uuidv4 } from 'uuid'
 
 export interface Question {
-  id: string;
+  id?: string;
+  title: string
   alternates: string[];
   answer: string;
   subject: Subject;
@@ -14,6 +15,7 @@ const schema = new Schema<Question>({
     type: String,
     default: uuidv4()
   },
+  title: String,
   alternates: [String],
   answer: String,
   subject: Object

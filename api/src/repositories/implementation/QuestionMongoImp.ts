@@ -1,21 +1,28 @@
-import { Question } from 'src/models/Question'
+import { Question, QuestionModel } from 'src/models/Question'
 import IQuestionRepository from '../IQuestionRepository'
 
 export default class QuestionMongoImp implements IQuestionRepository {
-  saveQuestion (Question: Question): Promise<void> {
-    throw new Error('Method not implemented.')
+  private projection: object;
+  constructor () {
+    this.projection = {
+      _id: 0
+    }
+  }
+
+  async saveQuestion (Question: Question): Promise<void> {
+    await QuestionModel.create(Question)
   }
 
   deleteQuestion (Question: Question): Promise<void> {
     throw new Error('Method not implemented.')
   }
 
-  findAll (): Promise<Question[]> {
-    throw new Error('Method not implemented.')
+  async findAll (): Promise<Question[]> {
+    return await QuestionModel.find({}, this.projection)
   }
 
-  findByName (name: string): Promise<Question[]> {
-    throw new Error('Method not implemented.')
+  async findByTitle (title: string): Promise<Question[]> {
+    return await QuestionModel.find({ title }, this.projection)
   }
 
   updateQuestion (Question: Question, id: string): Promise<void> {
