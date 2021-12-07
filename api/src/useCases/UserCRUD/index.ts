@@ -1,4 +1,4 @@
-import UserMongoImp from 'src/repositories/implementation/UserMongoImp'
+import UserMongoImp from '../../repositories/implementation/UserMongoImp'
 import ControllerUserCRUD from './ControllerUserCRUD'
 import ServiceUserCRUD from './ServiceUserCRUD'
 

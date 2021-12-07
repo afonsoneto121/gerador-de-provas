@@ -1,4 +1,4 @@
-import SubjectMongoImp from 'src/repositories/implementation/SubjectMongoImp'
+import SubjectMongoImp from '../../repositories/implementation/SubjectMongoImp'
 import ControllerSubjectCRUD from './ControllerSubjectCRUD'
 import ServiceSubjectCRUD from './ServiceSubjectCRUD'
 

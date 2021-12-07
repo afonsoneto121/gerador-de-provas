@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { User } from 'src/models/User'
 import { StatusCodes } from 'http-status-codes'
+import { User } from '../../models/User'
 import ServiceUserCRUD from './ServiceUserCRUD'
 
 export default class ControllerUserCRUD {

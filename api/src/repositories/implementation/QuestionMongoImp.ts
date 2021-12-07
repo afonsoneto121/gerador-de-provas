@@ -1,4 +1,4 @@
-import { Question, QuestionModel } from 'src/models/Question'
+import { Question, QuestionModel } from '../../models/Question'
 import IQuestionRepository from '../IQuestionRepository'
 
 export default class QuestionMongoImp implements IQuestionRepository {

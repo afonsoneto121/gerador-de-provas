@@ -1,4 +1,4 @@
-import { Question } from 'src/models/Question'
+import { Question } from '../models/Question'
 
 export default interface IQuestionRepository {
   saveQuestion(Question: Question): Promise<void>;

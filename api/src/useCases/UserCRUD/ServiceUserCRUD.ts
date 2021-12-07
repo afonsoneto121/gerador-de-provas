@@ -1,5 +1,5 @@
-import { User } from 'src/models/User'
-import IUserRepository from 'src/repositories/IUserRepository'
+import { User } from '../../models/User'
+import IUserRepository from '../../repositories/IUserRepository'
 import UserDTO from './DTOUserCRUD'
 
 export default class ServiceUserCRUD {

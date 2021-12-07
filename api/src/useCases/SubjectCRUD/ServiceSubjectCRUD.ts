@@ -1,5 +1,5 @@
-import { Subject } from 'src/models/Subject'
-import ISubjectRepository from 'src/repositories/ISubjectRepository'
+import { Subject } from '../../models/Subject'
+import ISubjectRepository from '../../repositories/ISubjectRepository'
 import { SubjectDTO } from './DTOSubjectCRUD'
 
 export default class ServiceSubjectCRUD {

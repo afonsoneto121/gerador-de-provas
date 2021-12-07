@@ -1,6 +1,6 @@
-import { Question } from 'src/models/Question'
-import { Subject } from 'src/models/Subject'
-import { User } from 'src/models/User'
+import { Question } from '../../models/Question'
+import { Subject } from '../../models/Subject'
+import { User } from '../../models/User'
 
 export const validUser: User = {
   id: '1',

@@ -1,4 +1,4 @@
-import { Subject } from 'src/models/Subject'
+import { Subject } from '../models/Subject'
 
 export default interface ISubjectRepository {
   saveSubject(subject: Subject): Promise<void>;

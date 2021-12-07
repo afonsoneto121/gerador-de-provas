@@ -1,4 +1,4 @@
-import { Subject, SubjectModel } from 'src/models/Subject'
+import { Subject, SubjectModel } from '../../models/Subject'
 import ISubjectRepository from '../ISubjectRepository'
 
 export default class SubjectMongoImp implements ISubjectRepository {

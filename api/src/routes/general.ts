@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import controllerSubject from 'src/useCases/SubjectCRUD'
-import controlerUserCRUD from 'src/useCases/UserCRUD'
+import controllerSubject from '../useCases/SubjectCRUD'
+import controlerUserCRUD from '../useCases/UserCRUD'
 
 const router = Router()
 

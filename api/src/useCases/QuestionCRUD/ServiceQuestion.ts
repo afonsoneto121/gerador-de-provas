@@ -1,5 +1,5 @@
-import { Question } from 'src/models/Question'
-import IQuestionRepository from 'src/repositories/IQuestionRepository'
+import { Question } from '../../models/Question'
+import IQuestionRepository from '../../repositories/IQuestionRepository'
 
 export default class ServiceQuestionCRUD {
   private repository: IQuestionRepository

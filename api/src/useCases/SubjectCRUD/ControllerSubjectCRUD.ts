@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { StatusCodes } from 'http-status-codes'
-import { Subject } from 'src/models/Subject'
+import { Subject } from '../../models/Subject'
 import ServiceSubjectCRUD from './ServiceSubjectCRUD'
 
 export default class ControllerSubjectCRUD {

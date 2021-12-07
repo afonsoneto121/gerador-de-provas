@@ -1,4 +1,4 @@
-import { User } from 'src/models/User'
+import { User } from '../models/User'
 
 export default interface IUserRepository {
   saveUser(user: User): Promise<void>;

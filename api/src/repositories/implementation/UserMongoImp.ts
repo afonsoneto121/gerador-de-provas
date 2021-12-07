@@ -1,4 +1,4 @@
-import { User, UserModel } from 'src/models/User'
+import { User, UserModel } from '../../models/User'
 import IUserRepository from '../IUserRepository'
 
 export default class UserMongoImp implements IUserRepository {
