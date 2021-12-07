@@ -7,6 +7,7 @@ const db = process.env.MONGO_DB || 'provas'
 const user = process.env.MONGO_USER || 'root'
 const pass = process.env.MONGO_PASS || 'root'
 
+const URL = process.env.MONGO_URL || `mongodb://${user}:${pass}@${host}:${port}/${db}?authSource=admin`
 const options = {
   autoIndex: false,
   autoCreate: true
@@ -20,5 +21,5 @@ connection.on('error', () => {
 })
 
 export const run = async (): Promise<void> => {
-  await connect(`mongodb://${user}:${pass}@${host}:${port}/${db}?authSource=admin`, options)
+  await connect(URL, options)
 }
