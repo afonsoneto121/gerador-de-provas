@@ -9,7 +9,7 @@
     "test:cov": "jest --coverage",
     "test:watch": "jest --watch",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "start": "npm run build && node dist/server.js"
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "Afonso Neto",
